@@ -3,7 +3,6 @@ types-libsass
 black
 debugpy
 django-debug-toolbar
-django-extensions
 djlint
 flake8
 ipdb

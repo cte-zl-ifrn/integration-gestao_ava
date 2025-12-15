@@ -1,6 +1,7 @@
 # Core
 Django==5.2.4
 sc4py==0.1.4
+django-extensions
 
 # Models
 django-better-choices==1.17
