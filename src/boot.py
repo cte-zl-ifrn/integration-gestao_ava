@@ -27,7 +27,6 @@ def start_debug():
             from django.core.management import execute_from_command_line
 
             debugpy.listen(("0.0.0.0", 5678))
-            execute_from_command_line([sys.argv[0], "show_urls"])
         except Exception:
             pass
 

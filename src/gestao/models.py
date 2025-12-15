@@ -1,30 +1,14 @@
 from django.utils.translation import gettext as _
-from django.db.models import CharField, DateField, BooleanField
-from django_tenants.models import TenantMixin, DomainMixin # tenants
+from django.db.models import CharField, DateField, Model, BooleanField
 
 
-# tenants
-class Cliente(TenantMixin):
-    name = CharField(max_length=256)
-    created_on = DateField(auto_now_add=True)
-
-    # default true, schema will be automatically created and synced when it is saved
-    auto_create_schema = True
+class Cliente(Model):
+    nome = CharField(_("nome do cliente"), max_length=256)
+    dominio = CharField(_("domínio"), max_length=512, unique=True)
+    is_active = BooleanField(_("ativo?"), default=True)
+    created_on = DateField(_("criado em"), auto_now_add=True)
 
     class Meta:
         verbose_name = _("cliente")
         verbose_name_plural = _("clientes")
-        ordering = ["name"]
-
-
-# tenants
-class Dominio(DomainMixin):
-
-    @property
-    def is_primary_icon(self):
-        return "✅" if self.is_primary else "⛔"
-
-    class Meta:
-        verbose_name = _("domínio")
-        verbose_name_plural = _("domínios")
-        ordering = ["domain"]
+        ordering = ["nome"]

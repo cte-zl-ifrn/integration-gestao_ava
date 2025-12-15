@@ -1,8 +1,6 @@
 from django.utils.translation import gettext as _
 from django.utils.safestring import mark_safe
-from django.urls import reverse
-from django.contrib.admin import register, display, StackedInline, ModelAdmin, site
-from django.utils.html import format_html
+from django.contrib.admin import register, display, site
 from django.contrib.auth.models import User
 from import_export.resources import ModelResource
 from base.admin import BaseModelAdmin
