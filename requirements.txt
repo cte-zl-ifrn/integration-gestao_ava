@@ -18,7 +18,7 @@ requests==2.32.4
 # Session
 django-redis-sessions==0.6.2
 redis==6.2.0
-#valkey[libvalkey]==6.1.0
+#valkey==6.1.0
 
 # # Security
 # django-oauth-toolkit==3.0.1
