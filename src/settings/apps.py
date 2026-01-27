@@ -1,9 +1,11 @@
 from sc4py.env import env, env_as_list, env_as_bool
 import datetime
 
-APP_LABEL = "Integrador AVA"
-APP_VERSION = "1.1.025"
-APP_LAST_STARTUP = int(datetime.datetime.timestamp(datetime.datetime.now()) * 1000)
+PROJECT_COMPANY = "IFRN"
+PROJECT_TITLE = "Gestor AVA"
+PROJECT_SUBTITLE = "Sistema de gestão das integrações de Ambientes Virtuais de Aprendizagem"
+PROJECT_VERSION = "1.1.025"
+PROJECT_LAST_STARTUP = int(datetime.datetime.timestamp(datetime.datetime.now()) * 1000)
 
 SHOW_SUPPORT_FORM = env_as_bool("SHOW_SUPPORT_FORM", True)
 SHOW_SUPPORT_CHAT = env_as_bool("SHOW_SUPPORT_CHAT", True)
