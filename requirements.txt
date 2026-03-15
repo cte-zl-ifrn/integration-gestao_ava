@@ -39,7 +39,7 @@ django-richtextfield==1.6.2
 
 
 # Database
-psycopg[binary,pool]==3.3.2
+psycopg[binary,pool]==3.3.3
 
 # # Image
 # pillow==11.3.0
