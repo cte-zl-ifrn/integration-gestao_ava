@@ -46,5 +46,5 @@ psycopg[binary,pool]==3.3.2
 
 # Production
 sentry-sdk[django,rq]==2.49.0
-gunicorn==23.0.0
+gunicorn==25.1.0
 # uvicorn==0.40.0
