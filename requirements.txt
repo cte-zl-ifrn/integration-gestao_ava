@@ -45,6 +45,6 @@ psycopg[binary,pool]==3.3.2
 # pillow==11.3.0
 
 # Production
-sentry-sdk[django,rq]==2.49.0
+sentry-sdk[django,rq]==2.55.0
 gunicorn==23.0.0
 # uvicorn==0.40.0
